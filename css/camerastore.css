@@ -1,0 +1,11 @@
+/*
+Main CSS
+ */
+
+body {
+    margin: 0;
+}
+
+div.container {
+    width: 100%;
+}
