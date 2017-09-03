@@ -3,16 +3,46 @@ Header section CSS
  */
 
 #header {
+    padding-top: 10px;
     background-color: #60a6ff;
-    height: 60px;
 }
 
-#headerList {
-    margin: 0;
-    list-style-type: none;
-    display: inline;
+#header-wrapper {
+    margin: auto;
+    max-width: 1200px;
 }
 
-#headerList li {
-    display: inline-block;
+#header a {
+    display:inline-block;
+    padding:10px 30px;
+    text-decoration: none;
 }
+
+#header a:hover {
+    background-color: #161cff;
+}
+
+/*#headerList {*/
+    /*position: absolute;*/
+    /*bottom: 0;*/
+    /*padding-left: 10%;*/
+    /*margin: 0;*/
+    /*list-style-type: none;*/
+    /*display: inline-block;*/
+/*}*/
+
+/*#headerList li {*/
+    /*display: inline-block;*/
+/*}*/
+
+/*#headerList li a {*/
+    /*display: block;*/
+    /*padding: 10px 40px;*/
+    /*color: white;*/
+    /*text-decoration: none;*/
+/*}*/
+
+/*#headerList li a:hover {*/
+    /*background-color: #161cff;*/
+/*}*/
+
