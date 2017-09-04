@@ -6,6 +6,16 @@ body {
     margin: 0;
 }
 
-div.container {
-    width: 100%;
+.search-box {
+    margin-top: 40px;
+    margin-left: 220px;
+}
+
+.search-box-select {
+    display: inline-block;
+    padding: 10px 80px 10px 10px;
+    -webkit-appearance: none;
+    background-image: url("../png/down-arrow.png");
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
 }
