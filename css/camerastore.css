@@ -7,8 +7,8 @@ body {
 }
 
 .search-box {
-    margin-top: 40px;
-    margin-left: 11.5%;
+    max-width: 80%;
+    margin: 30px auto;
 }
 
 .select-container {
@@ -16,7 +16,7 @@ body {
 }
 
 .select-container__select {
-    width: 300px;
+    width: 200px;
     padding: 10px 10px;
     -webkit-appearance: none;
     background-image: url("../png/down-arrow.png");
@@ -32,7 +32,7 @@ body {
 
 .price-container__wrapper {
     display: inline-block;
-    border: 1px solid rgb(169, 169, 169);
+    /*border: 1px solid rgb(169, 169, 169);*/
 }
 
 .price-container__label {
@@ -50,15 +50,15 @@ body {
 .price-container__from-input {
     padding: 10px 10px;
     margin-right: -4px;
-    border-width: 1px;
-    border-color: rgb(169, 169, 169);
-    border-style: none solid none none;
+    /*border-width: 1px;*/
+    /*border-color: rgb(169, 169, 169);*/
+    /*border-style: none solid none none;*/
     outline: none;
 }
 
 .price-container__to-input {
     padding: 10px 10px;
-    border-style: none;
+    /*border-style: none;*/
     outline: none;
 }
 

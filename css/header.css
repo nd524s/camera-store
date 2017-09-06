@@ -8,8 +8,8 @@ Header section CSS
 }
 
 .header__wrapper {
-    display: inline-block;
-    margin-left: 10%;
+    max-width: 80%;
+    margin: auto;
 }
 
 .header a {
@@ -20,13 +20,13 @@ Header section CSS
     cursor: pointer;
 }
 
-.header_wrapper a:hover {
+.header__wrapper a:hover {
     background-color: #0a112b;
 }
 
 .header__basket {
     display: inline-block;
-    margin-left: 30%;
+    margin-left: 10%;
 }
 
 .header_basket a {
