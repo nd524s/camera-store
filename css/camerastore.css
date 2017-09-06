@@ -8,14 +8,104 @@ body {
 
 .search-box {
     margin-top: 40px;
-    margin-left: 220px;
+    margin-left: 11.5%;
 }
 
-.search-box-select {
+.select-container {
     display: inline-block;
-    padding: 10px 80px 10px 10px;
+}
+
+.select-container__select {
+    width: 300px;
+    padding: 10px 10px;
     -webkit-appearance: none;
     background-image: url("../png/down-arrow.png");
     background-repeat: no-repeat;
     background-position: 95% 50%;
+    outline: none;
 }
+
+.price-container {
+    display: inline-block;
+    margin-left: 5%;
+}
+
+.price-container__wrapper {
+    display: inline-block;
+    border: 1px solid rgb(169, 169, 169);
+}
+
+.price-container__label {
+    margin-left: 5px;
+}
+
+.price-container__span_right-offset {
+    margin-right: 5px;
+}
+
+.price-container__span_left-offset {
+    margin-left: 5px;
+}
+
+.price-container__from-input {
+    padding: 10px 10px;
+    margin-right: -4px;
+    border-width: 1px;
+    border-color: rgb(169, 169, 169);
+    border-style: none solid none none;
+    outline: none;
+}
+
+.price-container__to-input {
+    padding: 10px 10px;
+    border-style: none;
+    outline: none;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.content {
+    display: flex;
+    max-width: 1500px;
+    margin: 30px auto;
+    flex-wrap: wrap;
+    border-color: #0a112b;
+    border-style: solid;
+}
+
+.content__item {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 500px;
+    max-width: 700px;
+    border-color: #0a112b;
+    border-style: solid;
+}
+
+.content__img-wrapper {
+    min-height:250px;
+    max-width: 350px;
+    overflow: hidden;
+    border-color: #0a112b;
+    border-style: solid;
+}
+
+.content__description-wrapper {
+    margin-top: 5px;
+    min-height: 150px;
+    max-width: 350px;
+    border-color: #0a112b;
+    border-style: solid;
+}
+
+.content__price-wrapper {
+    max-height: 90px;
+    min-width: 350px;
+    align-self: flex-end;
+    border-color: #0a112b;
+    border-style: solid;
+}
+
