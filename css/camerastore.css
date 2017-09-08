@@ -7,7 +7,7 @@ body {
 }
 
 .search-box {
-    max-width: 80%;
+    max-width: 75%;
     margin: 30px auto;
 }
 
@@ -32,7 +32,13 @@ body {
 
 .price-container__wrapper {
     display: inline-block;
-    /*border: 1px solid rgb(169, 169, 169);*/
+    border: 1px solid rgb(169, 169, 169);
+}
+
+.price-container__input {
+    padding: 10px 10px;
+    border-style: none;
+    outline: none;
 }
 
 .price-container__label {
@@ -46,20 +52,8 @@ body {
 .price-container__span_left-offset {
     margin-left: 5px;
 }
-
-.price-container__from-input {
-    padding: 10px 10px;
-    margin-right: -4px;
-    /*border-width: 1px;*/
-    /*border-color: rgb(169, 169, 169);*/
-    /*border-style: none solid none none;*/
-    outline: none;
-}
-
-.price-container__to-input {
-    padding: 10px 10px;
-    /*border-style: none;*/
-    outline: none;
+.price-container__to-input_left {
+    margin-left: -5px;
 }
 
 input[type=number]::-webkit-inner-spin-button {
