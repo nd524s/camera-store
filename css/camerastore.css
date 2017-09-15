@@ -69,7 +69,7 @@ input[type=number]::-webkit-inner-spin-button {
 
 .content {
     display: flex;
-    max-width: 1300px;
+    max-width: 1200px;
     margin: 30px auto;
     flex-wrap: wrap;
     /*border-color: #0a112b;*/
@@ -119,10 +119,16 @@ input[type=number]::-webkit-inner-spin-button {
 
 
 .content__img-wrapper_flex {
-    flex:0 0 300px;
+    padding: 10px;
+    flex:0 0 50%;
     height: 300px;
 }
 
 .entire-content_flex {
-    flex: 0 0 300px;
+    padding-left: 10px;
+    flex: 0 0 50%;
+}
+
+.cut-padding {
+    width: calc(100% - 10px);
 }
