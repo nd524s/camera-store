@@ -3,18 +3,55 @@ Header section CSS
  */
 
 .header {
-    padding-top: 10px;
     background-color: #60a6ff;
 }
 
 .header__wrapper {
-    max-width: 80%;
+    max-width: 60%;
+    padding-top: 10px;
     margin: auto;
+    display: flex;
+}
+
+.header__wrapper_space-between {
+    justify-content: space-between;
+}
+
+.header__wrapper h1 {
+    margin: 0;
+    flex:1 0 auto;
+}
+
+.header__wrapper span {
+    display: inline-flex;
+    align-items:center;
+    flex:1 0 auto;
+    color: white;
+}
+
+.header__wrapper_left-offset {
+    margin-left: 20px;
+}
+
+.header__wrapper input {
+    flex:4 0 auto;
+    background-color: inherit;
+    font-family: FontAwesome;
+    border-style: none;
+    outline: none;
+    border-bottom: 1px solid white;
+}
+
+.header__wrapper input::placeholder {
+    color: white;
+}
+
+.header__wrapper input:focus::placeholder {
+    color: transparent;
 }
 
 .header a {
-    display:inline-block;
-    padding:10px 30px;
+    padding:10px 20px;
     text-decoration: none;
     color: white;
     cursor: pointer;
@@ -25,8 +62,7 @@ Header section CSS
 }
 
 .header__basket {
-    display: inline-block;
-    margin-left: 20%;
+    margin-left: auto;
 }
 
 .header_basket a {
