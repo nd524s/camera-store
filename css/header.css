@@ -70,5 +70,12 @@ Header section CSS
     cursor: pointer;
 }
 
-
-
+/*Styles for mobiles and tablets*/
+@media (max-width: 500px) {
+  body {
+    background-color: red;
+  }
+  /*.header__wrapper {
+    max-width: 100%
+  }*/
+}
