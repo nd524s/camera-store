@@ -5,20 +5,23 @@
     <meta name="author" content="Mikita Khadarovich">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Camera shop</title>
-    <link rel="stylesheet" type="text/css" href="../css/camerastore.css">
     <link rel="stylesheet" type="text/css" href="../css/header.css">
+    <link rel="stylesheet" type="text/css" href="../css/camerastore.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div class="container">
         <div class="header">
             <div class="header__wrapper header__wrapper_space-between">
+                <i id="menu-bar" class="fa fa-bars fa-2x"></i>
                 <h1>ТЕХНОПАРК</h1>
                 <span>8 800 755 80 80</span>
                 <input type="search" placeholder="&#xf002; ПОИСК ТОВАРОВ">
                 <a class="header__wrapper_left-offset">ДОСТАВКА И ОПЛАТА</a>
+                <i id="search-icon" class="fa fa-search fa-2x"></i>
+                <i id="cart-icon" class="fa fa-shopping-cart fa-2x"></i>
             </div>
-            <div class="header__wrapper">
+            <div id="item-types" class="header__wrapper">
                 <a href="#">МОБИЛЬНЫЕ ТЕЛЕФОНЫ</a>
                 <a href="#">ПЛАНШЕТЫ</a>
                 <a href="#">ФОТОТЕХНИКА</a>
@@ -28,15 +31,15 @@
         </div>
         <div class="search-box">
           <div class="select-container">
-              <a id = "a_type" class="select-container__a"><span class="select-container__span">ЛЮБОГО ТИПА</span></a>
-              <ul id = "ul_type" class="select-container__ul">
+              <a class="select-container__a"><span class="select-container__span">ЛЮБОГО ТИПА</span></a>
+              <ul class="select-container__ul">
                   <li><a href="#">КОМПАКТ-КАМЕРА</a></li>
                   <li><a href="#">ЛЮБОГО БРЭНДА</a></li>
               </ul>
           </div>
           <div class="select-container">
-              <a id = "a_brand" class="select-container__a"><span class="select-container__span">ЛЮБОГО БРЭНДА</span></a>
-              <ul id = "ul_brand"class="select-container__ul">
+              <a class="select-container__a"><span class="select-container__span">ЛЮБОГО БРЭНДА</span></a>
+              <ul class="select-container__ul">
                   <li><a href="#">CANON</a></li>
                   <li><a href="#">NIKON</a></li>
                   <li><a href="#">SONY</a></li>

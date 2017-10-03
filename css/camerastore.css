@@ -174,3 +174,34 @@ input[type=number]::-webkit-inner-spin-button {
     border: 1px solid #251cff;
     cursor: pointer;
 }
+
+/*Styles for mobiles and tablets*/
+@media (max-width: 500px) {
+  body {
+    background-color: yellow;
+  }
+
+  .header__wrapper {
+    max-width: 95%;
+    padding: 10px 0;
+    align-items: flex-end;
+  }
+
+  .header__wrapper span, input, a {
+    display: none;
+  }
+
+  .header__wrapper h1 {
+    flex:10 0 auto;
+  }
+
+  #item-types {
+    display: none;
+  }
+
+  #menu-bar, #search-icon, #cart-icon {
+    display: inline-flex;
+    flex:1 0 auto;
+  }
+
+}

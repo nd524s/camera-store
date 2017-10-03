@@ -13,6 +13,11 @@ Header section CSS
     display: flex;
 }
 
+#menu-bar, #search-icon, #cart-icon {
+  display: none;
+}
+
+
 .header__wrapper_space-between {
     justify-content: space-between;
 }
@@ -68,14 +73,4 @@ Header section CSS
 .header_basket a {
     color: white;
     cursor: pointer;
-}
-
-/*Styles for mobiles and tablets*/
-@media (max-width: 500px) {
-  body {
-    background-color: red;
-  }
-  /*.header__wrapper {
-    max-width: 100%
-  }*/
 }
