@@ -19,3 +19,9 @@ $(window).click(function (e) {
       $(".select-container__ul").removeClass("show");
     }
 });
+
+$(".content__item").hover(function() {
+    if($(this).closest(".content__item_large").length === 0) {
+        $(this).css("background-color", "rgba(0, 99, 255, 0.3)");
+    }
+});

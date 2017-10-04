@@ -14,7 +14,11 @@ Header section CSS
 }
 
 #menu-bar, #search-icon, #cart-icon {
-  display: none;
+    display: none;
+}
+
+.mobile-bar {
+    display: none;
 }
 
 
