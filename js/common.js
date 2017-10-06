@@ -39,8 +39,25 @@ $("#menu-bar").on("click", function() {
      $("#item-types").css("display","block");
 });
 
-// $("#search-criteria").on("click", function(e) {
-//     e.preventDefault();
-//     $(".popup").css("display", "block");
-//     $(".search-box").css("display", "block");
-// });
+$("#search-criteria").on("click", function(e) {
+    e.preventDefault();
+    $(".popup").css("display", "block");
+    $(".search-box").css("display", "block");
+});
+
+$(".select-container__ul li").on("click", function(e) {
+    e.preventDefault();
+    var selectedValue = $(this).text();
+    $(this).parent().prev().children().text(selectedValue);
+});
+
+$(document).keypress(function(e) {
+    if(e.which == 13) {
+        $(".popup").css("display", "none");
+        $(".search-box").css("display", "none");
+    }
+});
+
+$("#search-icon").on("click", function(e) {
+    $(".header__wrapper input").appendTo("search-line");
+});

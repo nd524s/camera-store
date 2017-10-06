@@ -201,7 +201,7 @@ input[type=number]::-webkit-inner-spin-button {
       align-items: flex-end;
   }
 
-  .header__wrapper span, input, a {
+  .header span, input, a {
       display: none;
   }
 
@@ -227,11 +227,18 @@ input[type=number]::-webkit-inner-spin-button {
 
   .search-box {
       display: none;
-      width: 100%
+      position: fixed;
+      top: 0;
+	  right: 0;
+	  left: 0;
+      width: 80%;
+      margin: 20px auto 0 auto;
+      z-index: 2;
+      background-color: rgb(255, 255, 255);
   }
 
   .content__item {
-      max-width: 100%;
+      min-width: 100%;
       height: auto;
   }
 
@@ -261,7 +268,7 @@ input[type=number]::-webkit-inner-spin-button {
       display: block;
   }
 
-  .header__basket {
+  .header div:nth-child(2) a:last-child {
       display: none;
   }
 
@@ -275,5 +282,40 @@ input[type=number]::-webkit-inner-spin-button {
       background-color: rgba(0, 0, 0, 0.3);
   }
 
+  .select-container__a {
+      display: block;
+      width: 90%;
+      margin: 10px auto 0 auto;
+      height:40px;
+      text-align: center;
+  }
+
+  .select-container__ul {
+      width: 90%;
+      left: 0;
+      right: 0;
+      margin: auto;
+  }
+
+  .price-container span {
+      display: none;
+  }
+
+  .price-container__wrapper {
+      display: block;
+      width: 90%;
+      margin: 10px auto 0 auto;
+  }
+
+  .price-container__input {
+      display: inline-block;
+      width: 90%;
+      padding: 0;
+      height:40px;
+  }
+
+  .price-container {
+      margin-bottom: 10px;
+  }
 
 }
