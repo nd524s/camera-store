@@ -13,10 +13,11 @@ $(".select-container__a").on("click", function (e) {
 
 $(window).click(function (e) {
     e.preventDefault();
-    if (event.target.matches(".select-container__a") || event.target.matches(".select-container__ul") || event.target.matches("#menu-bar")){
+    if (event.target.matches(".select-container__a") || event.target.matches(".select-container__ul") || event.target.matches("#menu-bar") || event.target.matches("#search-icon") || event.target.matches(".search-line input")){
         return;
     } else {
         $(".select-container__ul").removeClass("show");
+        $(".search-line").css("display","none");
         if(window.innerWidth <= 500) {
             $("#item-types").css("display","none");
       }
@@ -59,5 +60,9 @@ $(document).keypress(function(e) {
 });
 
 $("#search-icon").on("click", function(e) {
-    $(".header__wrapper input").appendTo("search-line");
+    $(".header__wrapper input").appendTo(".search-line");
+    $(".search-line").css("display", "block");
+    $(".search-line input").attr("placeholder", "ПОИСК ТОВАРОВ")
+    $(".search-line input").addClass("mobile-search");
+    $(".mobile-search").css("border-bottom", "none");
 });

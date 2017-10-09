@@ -42,7 +42,7 @@ Header section CSS
     margin-left: 20px;
 }
 
-.header__wrapper input {
+.header input {
     flex:4 0 auto;
     background-color: inherit;
     font-family: FontAwesome;
@@ -51,7 +51,7 @@ Header section CSS
     border-bottom: 1px solid white;
 }
 
-.header__wrapper input::placeholder {
+.header input::placeholder {
     color: white;
 }
 

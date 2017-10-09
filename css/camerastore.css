@@ -15,14 +15,20 @@ body {
     width: 60%;
     margin: 30px auto;
     display: flex;
-    justify-content: space-around;
+    /*justify-content: space-around;*/
+}
+
+.select-container {
+    flex: 2 0 200px;
+    margin: 0 10px;
+    position: relative;
 }
 
 .select-container__ul {
     display: none;
     position: absolute;
     list-style-type: none;
-    width: 200px;
+    width: 100%;
     margin: 0;
     padding: 0;
     border: 1px solid rgb(169, 169, 169);
@@ -52,7 +58,7 @@ body {
     cursor: pointer;
     border: 1px solid rgb(169, 169, 169);
     height: 100%;
-    width: 200px;
+    width: 100%;
     background-image: url("../png/down-arrow.png");
     background-repeat: no-repeat;
     background-position: 95% 50%;
@@ -72,7 +78,12 @@ body {
 }
 
 .show {
-  display: block;
+    display: block;
+}
+
+.price-container {
+    flex: 1 0 auto;
+    margin-left: 40px;
 }
 
 .price-container__wrapper {
@@ -189,6 +200,14 @@ input[type=number]::-webkit-inner-spin-button {
     cursor: pointer;
 }
 
+.search-line hr {
+    display: none;
+}
+
+.search-line {
+    display: none;
+}
+
 /*Styles for mobiles and tablets*/
 @media (max-width: 500px) {
   /*body {
@@ -250,7 +269,7 @@ input[type=number]::-webkit-inner-spin-button {
       flex-wrap: wrap;
   }
 
-  .header div:nth-child(2) {
+  .header div:nth-child(3) {
       display: none;
       max-width:100%;
   }
@@ -264,11 +283,11 @@ input[type=number]::-webkit-inner-spin-button {
       cursor: pointer;
   }
 
-  .header div:nth-child(2) a {
+  .header div:nth-child(3) a {
       display: block;
   }
 
-  .header div:nth-child(2) a:last-child {
+  .header div:nth-child(3) a:last-child {
       display: none;
   }
 
@@ -302,20 +321,43 @@ input[type=number]::-webkit-inner-spin-button {
   }
 
   .price-container__wrapper {
-      display: block;
+      display: flex;
       width: 90%;
       margin: 10px auto 0 auto;
   }
 
   .price-container__input {
-      display: inline-block;
-      width: 90%;
+      display: block;
+      flex: 9 0 auto;
       padding: 0;
       height:40px;
   }
 
   .price-container {
       margin-bottom: 10px;
+  }
+
+  .price-container__label {
+      margin-left: 0;
+      padding-left: 10px;
+      align-self: center;
+      flex: 1 0 auto;
+  }
+
+  .mobile-search {
+      display: block;
+      height: 40px;
+      width: 95%;
+      margin: auto;
+      border-bottom: none;
+      outline: none;
+  }
+
+  .search-line hr {
+      display: block;
+      border: 0;
+      height: 1px;
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0))
   }
 
 }
