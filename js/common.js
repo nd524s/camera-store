@@ -1,6 +1,6 @@
 $(".select-container__a").on("click", function (e) {
     e.preventDefault();
-    var dropDown = this.nextElementSibling;
+    let dropDown = this.nextElementSibling;
     if(dropDown.tagName == "UL") {
         if(dropDown.classList.contains("show")) {
             dropDown.classList.remove("show");
@@ -36,7 +36,6 @@ $(".content__item").hover(function() {
 });
 
 $("#menu-bar").on("click", function() {
-    // $("#item-types").addClass("show");
      $("#item-types").css("display","block");
 });
 
